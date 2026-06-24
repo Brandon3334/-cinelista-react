@@ -1,0 +1,58 @@
+ Parte A
+Prompt: "Ayúdame a identificar qué elementos de React se relacionan con una aplicación de cartelera digital llamada CineLista. Necesito reconocer componentes, JSX, props, estado, renderizado de listas y renderizado condicional, pero quiero redactar el análisis final con mis propias palabras."
+
+Resultado: La IA me ayudó a ordenar qué elementos de React se aplicaban en la problemática de la cartelera digital.
+
+Utilidad: Útil, porque me permitió entender mejor dónde usar componentes, props, estado, listas y condicionales antes de comenzar a programar.
+
+Modificaciones: Redacté el contenido de ANALISIS.md con mis propias palabras y adapté los ejemplos a los archivos reales de mi proyecto, como PeliculaCard, ListaPeliculas, FiltroClasificacion y App.jsx.
+
+
+=== Etapa 1 ===
+Prompt: "Guíame para crear un proyecto React con Vite llamado cinelista-react, crear la carpeta src/data, agregar peliculas.js e importar el arreglo peliculas en App.jsx para comprobarlo con console.log. No avances todavía a componentes."
+
+Resultado: La IA me indicó los pasos para crear el proyecto base, instalar dependencias, crear el archivo de datos e importar el arreglo en App.jsx.
+
+Utilidad: Útil, porque pude verificar que el proyecto corría en localhost y que los datos de películas cargaban correctamente en consola.
+
+Modificaciones: Ejecuté manualmente los comandos, creé las carpetas necesarias y agregué el archivo peliculas.js entregado por el docente.
+
+
+=== Etapa 2 ===
+Prompt: "Ayúdame a crear un componente PeliculaCard en React que reciba por props titulo, genero, duracion, clasificacion, sinopsis y horarios. También necesito que tenga valores por defecto o documentación de props y que muestre un estilo distinto según la clasificación."
+
+Resultado: La IA me entregó una estructura base para el componente PeliculaCard y una forma simple de diferenciar visualmente las clasificaciones TE, +14 y +18.
+
+Utilidad: Útil, porque pude construir una tarjeta ordenada para mostrar la información de cada película.
+
+Modificaciones: Ajusté los textos, agregué valores por defecto para evitar errores si falta algún dato, documenté las props mediante comentarios y mantuve el renderizado como JSX normal sin usar dangerouslySetInnerHTML.
+
+
+=== Etapa 3 ===
+Prompt: "Ayúdame a crear un componente ListaPeliculas que reciba un arreglo de películas por props, lo recorra con map y renderice un PeliculaCard por cada película usando key con el id."
+
+Resultado: La IA me orientó para recorrer el arreglo de películas y enviar cada dato al componente PeliculaCard.
+
+Utilidad: Útil, porque pude mostrar todas las películas sin repetir manualmente el código de cada tarjeta.
+
+Modificaciones: Revisé que la prop key usara pelicula.id y no el índice del arreglo. También adapté los nombres de las props según la estructura real del archivo peliculas.js.
+
+
+=== Etapa 4 ===
+Prompt: "Ayúdame a implementar en App.jsx un filtro por clasificación y una búsqueda controlada por título usando useState. Necesito aplicar ambos filtros al arreglo antes de pasarlo a ListaPeliculas y mostrar un mensaje cuando no haya resultados."
+
+Resultado: La IA me ayudó a organizar la lógica del filtro por clasificación, la búsqueda por título y el renderizado condicional para el caso sin resultados.
+
+Utilidad: Útil, porque pude combinar ambos filtros y mantener el input de búsqueda controlado desde el estado de React.
+
+Modificaciones: Normalicé el texto de búsqueda usando trim y toLowerCase, limité el largo del input y comprobé que el mensaje “No hay películas que coincidan” apareciera cuando correspondía.
+
+
+=== Etapa 5 ===
+Prompt: "Ayúdame a destacar visualmente las películas que tienen funcionHoy en true y a mostrar un contador con la cantidad de películas que se exhiben hoy."
+
+Resultado: La IA me sugirió mostrar una etiqueta HOY en las películas correspondientes y calcular un contador a partir del arreglo de películas.
+
+Utilidad: Útil, porque pude resaltar visualmente las funciones del día y mostrar el total de películas disponibles hoy.
+
+Modificaciones: Ajusté el diseño de la etiqueta HOY, agregué un borde distinto para las películas destacadas y verifiqué que el contador coincidiera con los datos del archivo peliculas.js.
