@@ -23,3 +23,13 @@ La aplicación permite visualizar películas disponibles, buscar por título, fi
  HTML
  CSS
  Git y GitHub
+
+
+
+# Entrega
+
+Repositorio público de GitHub utilizado para la entrega de la evaluación:
+
+(https://github.com/Brandon3334/-cinelista-react)
+
+La entrega incluye el código fuente de la aplicación, el archivo ANALISIS.md, el registro de uso de IA en ia.txt y las instrucciones de ejecución en este README.
